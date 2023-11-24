@@ -57,7 +57,7 @@ function Home() {
         {
           couples?.data?.map((couple:Couple, index:number)=>(
             <Link to={`/couple/${couple.slug}`} key={index}>
-              <div  className="couple">
+              <div className="couple">
                 <img src={couple.image_path} alt={couple.name} className="aspect-[1/1.25] object-cover object-top rounded-lg" />
                 <h2 className="mt-2 text-center">{couple.name}</h2>
               </div>
